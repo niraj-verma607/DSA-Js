@@ -81,26 +81,25 @@
 //
 // `num[2]`
 
+function equalDigit(num) {
+  // Check every index
+  for (let i = 0; i < num.length; i++) {
+    let count = 0;
 
-function equalDigit(num){
-    // Check every index
-    for (let i = 0; i < num.length; i++) {
-
-        let count = 0;
-
-        // Count how many times digit i appears
-        for (let j = 0; j < num.length; j++) {
-
-            if (num[j] === String(i)) {
-                count++;
-            }
-        }
-
-        // Compare count with num[i]
-        if (count !== Number(num[i])) {
-            return false;
-        }
+    // Count how many times digit i appears
+    for (let j = 0; j < num.length; j++) {
+      if (num[j] === String(i)) {
+        count++;
+      }
     }
 
-    return true;
+    // Compare count with num[i]
+    if (count !== Number(num[i])) {
+      return false;
+    }
+  }
+
+  return true;
 }
+
+console.log(equalDigit("1210"));
