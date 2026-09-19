@@ -103,3 +103,17 @@ function equalDigit(num) {
 }
 
 console.log(equalDigit("1210"));
+
+// Outer loop
+//     ↓
+// Choose digit i
+//     ↓
+// Inner loop
+//     ↓
+// Count digit i
+//     ↓
+// Compare count with num[i]
+//     ↓
+// Mismatch → false
+//     ↓
+// Everything matches → true
