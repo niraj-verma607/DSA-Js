@@ -124,3 +124,15 @@ function getLucky(s, k) {
 }
 
 console.log(getLucky("abc", 2));
+
+// String
+//   ↓
+// Convert letters to numbers
+//   ↓
+// Digit sum
+//   ↓
+// Digit sum
+//   ↓
+// ... k times
+//   ↓
+// Answer
