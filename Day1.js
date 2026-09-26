@@ -18,6 +18,7 @@ function areaOfTriangle(b, h) {
   console.log(area);
 }
 
+
 // areaOfTriangle(10, 5);
 // areaOfTriangle(10, 50);
 
